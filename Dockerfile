@@ -16,6 +16,7 @@ COPY package-lock.json package-lock.json
  
 COPY index.js index.js
 
-RUN npm install
+RUN npm install -g mocha
+
 
 ENTRYPOINT [ "node", "index.js" ]
