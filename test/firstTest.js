@@ -1,11 +1,9 @@
-import { should } from "chai";
-import { addTwo } from "../math/math.js";
+const assert = require("assert");
+const addTwo = require("../math/math");
 
-should()
-
-describe("Math Test", function(){
-    it("should return 10 for addTwo(5, 5)", function(){
+describe("Math Test", function () {
+    it("should return 10 for addTwo(5, 5)", function () {
         const result = addTwo(5, 5);
-        result.should.equal(10);
-    })
-})
+        assert.strictEqual(result, 10);
+    });
+});
